@@ -3,15 +3,15 @@
 
 This is a microservice for a public API which provides ability for traders to submit arrival and departure information.
 
-This mircoservice is in (Beta)[https://www.gov.uk/help/beta]. The signature may change. 
+This mircoservice is in [Beta](https://www.gov.uk/help/beta). The signature may change. 
 
 You can find our full list of endpoints on the [API definition page](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/common-transit-convention-traders/1.0).
 
 
-### Prerequisites    Speak to John/Rob
-- Scala 2.12.x
+### Prerequisites 
+- Scala 2.12.11
 - Java 8
-- sbt > 1.3.7
+- sbt > 1.3.13
 - [Service Manager](https://github.com/hmrc/service-manager)
 
 ### Development Setup
@@ -33,7 +33,7 @@ You can find helpful guides on the [HMRC Developer Hub](hhttps://developer.servi
 
 ### Reporting Issues
 
-You can create a [GitHub issue](https://github.com/hmrc/common-transit-convention-traders/issues). Alternatively you can contact our Software Development Support team. Email them to receive a form where you can add details about your requirements and questions at sdsteam@hmr.gov.uk.
+You can create a [GitHub issue](https://github.com/hmrc/common-transit-convention-traders/issues). Alternatively you can contact our Software Development Support team. Email them at sdsteam@hmr.gov.uk, to receive a form where you can add details about your requirements and questions.
 
 ### License
 
