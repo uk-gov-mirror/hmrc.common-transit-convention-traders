@@ -158,7 +158,7 @@ class GuaranteeInstructionBuilderSpec extends AnyFreeSpec with MockitoSugar with
     "returns Right(ChangeGuaranteeInstruction) to apply the default guarantee value if guarantee type is in referenceTypes and there is no amount but a currency" in {
       Guarantee.referenceTypes.foreach {
         typeChar =>
-          val result = sut.buildInstructionFromGuarantee(Guarantee(typeChar, "alpha"), SpecialMentionGuarantee("GBPalpha"))
+          val result = sut.buildInstructionFromGuarantee(Guarantee(typeChar, "alpha"), SpecialMentionGuarantee("EURalpha"))
           result mustBe a[Right[_, ChangeGuaranteeInstruction]]
           result.right.get.asInstanceOf[ChangeGuaranteeInstruction].mention.additionalInfo mustBe s"${BigDecimal(mockGuaranteeConfig.amount).setScale(2, BigDecimal.RoundingMode.UNNECESSARY).toString()}${mockCurrency}alpha"
       }
